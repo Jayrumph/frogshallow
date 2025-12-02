@@ -2,85 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Frogshallow Retreat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Linktree</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #c9e7ff 0%, #eefcff 100%);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-    .container {
-      background: rgba(255, 255, 255, 0.85);
-      padding: 30px;
-      border-radius: 20px;
-      width: 90%;
-      max-width: 420px;
-      text-align: center;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    .link-button {
-      display: block;
-      background: #000;
-      color: #fff;
-      padding: 14px;
-      margin: 12px 0;
-      border-radius: 12px;
-      text-decoration: none;
-      font-size: 18px;
-      transition: 0.2s;
-    }
-    .link-button:hover {
-      opacity: 0.7;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="hero" style="width:100%;max-width:420px;margin-bottom:20px;">
-    <!-- Replace hero.jpg with your actual image filename -->
-    <img src="image1.jpg" style="width:100%;border-radius:20px;border:4px solid #ffffff;box-shadow:0 4px 15px rgba(0,0,0,0.2);" />
-  </div>
-  <div class="container">
-    <h1>Book Direct & Save</h1>
+  <header class="site-header">
+    <div class="container">
+      <h1>Frogshallow Retreat</h1>
+      <p class="tagline">Relax by the water, surrounded by nature (and the odd frog).</p>
+    </div>
+  </header>
 
-    <a class="link-button" href="tel:+000000000">Call Now</a>
-    <a class="link-button" href="mailto:youremail@example.com">Email to Book</a>
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Frogs toasting wine at sunset on a pond" />
+    <div class="hero-overlay">
+      <h2>Your escape in the countryside</h2>
+      <p>Stay by the water, watch the frogs, and unwind in comfort.</p>
+    </div>
+  </section>
 
-    <h2>About This Space</h2>
-    <p>Cosy 1-bedroom self-contained cabin on a 13-acre lifestyle block in Morison Bush with sweeping South Wairarapa views. Sleeps 2, plus a fold-out couch for up to 4 (compact but comfortable, with storage shed for luggage). Enjoy sunsets, stargazing, and a dam surrounded by 100's of native trees. Just 10 mins to Greytown, 12 to Martinborough, with fishing and swimming at Morison Bush camping grounds nearby. Hosts live on-site and are happy to help with any requests. Parking for camper van or caravan.</p>
+  <section class="actions">
+    <div class="container">
+      <div class="button-row">
+        <!-- 👇 EDIT YOUR REAL PHONE NUMBER HERE -->
+        <a href="tel:+64272580806" class="btn primary">
+          Call Now <span class="phone-number">64272580806</span>
+        </a>
 
-    <h2>The Space</h2>
-    <ul>
-      <li>1 Queen Bed</li>
-      <li>Open plan with fold-out couch (sleeps 2), TV with Chromecast</li>
-      <li>Kitchenette: Fridge, Microwave, Cooktop, Kettle, Toaster, Essentials</li>
-      <li>Bathroom: Shower, Toilet, Basin</li>
-      <li>Outdoor space overlooking valley, seating by dam</li>
-      <li>Separate shed available for luggage storage</li>
-      <li>Parking: Carport + additional parking for caravans</li>
-      <li>Best suited for 2, can accommodate 4</li>
-    </ul>
+        <!-- 👇 EDIT YOUR REAL EMAIL ADDRESS HERE -->
+        <a href="mailto:shaza_61@hotmail.com?subject=Frogshallow%20Booking%20Enquiry" class="btn secondary">
+          Email to Book
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <h2>Guest Access</h2>
-    <p>Guests have full private use of the cabin and dam area surrounded by native trees. Positioned for privacy on our 13-acre block.</p>
+  <section class="gallery">
+    <div class="container">
+      <h2>Take a look around</h2>
+      <div class="grid">
+        <figure>
+          <img src="images/cabin.jpg" alt="Cabin exterior with garden" />
+          <figcaption>The cabin and native plantings</figcaption>
+        </figure>
+        <figure>
+          <img src="images/pond.jpg" alt="Pond with countryside views" />
+          <figcaption>The pond and rural views</figcaption>
+        </figure>
+        <figure>
+          <img src="images/bedroom.jpg" alt="Bedroom with soft colours and forest wallpaper" />
+          <figcaption>Cosy bedroom to relax in</figcaption>
+        </figure>
+        <figure>
+          <img src="images/livingroom.jpg" alt="Living room with TV and fireplace" />
+          <figcaption>Comfortable living area with fireplace</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
-    <h2>Other Things to Note</h2>
-    <p>The dam is unfenced — please take care.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Frogshallow Retreat</p>
+    </div>
+  </footer>
 
-    <h2>Gallery</h2>
-    <!-- Replace image1.jpg and image2.jpg with your actual filenames -->
-    <img src="image1.jpg" style="width:100%;border-radius:12px;margin-bottom:12px;border:4px solid #ffffff;box-shadow:0 4px 12px rgba(0,0,0,0.15);" />
-    <img src="image2.jpg" style="width:100%;border-radius:12px;margin-bottom:12px;border:4px solid #ffffff;box-shadow:0 4px 12px rgba(0,0,0,0.15);" />
-
-  </div>
+  <script>
+    // Update year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
